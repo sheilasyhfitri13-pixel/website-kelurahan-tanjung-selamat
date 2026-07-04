@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Resmi Kelurahan Tanjung Selamat</title>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    <script>
+$(document).ready(function(){
+
+    $("a").on('click', function(event){
+
+        if(this.hash !== ""){
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+
+                scrollTop: $(hash).offset().top-50
+
+            }, 800);
+
+        }
+
+    });
+
+});
+</script>
+body{
+    padding-top:50px;
+}
+
+.jumbotron{
+    background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
+    background-size:cover;
+    color:white;
+    text-shadow:2px 2px 4px black;
+    margin-bottom:0;
+}
+
+.section{
+    padding:50px 0;
+}
+
+.footer{
+    background:#222;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.galeri img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+.panel{
+    transition:0.3s;
+}
+
+.panel:hover{
+    transform:translateY(-10px);
+    box-shadow:0px 10px 20px rgba(0,0,0,0.3);
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div id="sliderDesa" class="carousel slide" data-ride="carousel">
+
+<ol class="carousel-indicators">
+<li data-target="#sliderKelurahan" data-slide-to="0" class="active"></li>
+<li data-target="#sliderKelurahan" data-slide-to="1"></li>
+<li data-target="#sliderKelurahan" data-slide-to="2"></li>
+</ol>
+
+<div class="carousel-inner">
+
+<div class="item active">
+<img src="images selamat datang.png" style="width:100%;height:500px;">
+<div class="carousel-caption">
+<h2>Selamat Datang di Kelurahan Tanjung Selamat</h2>
+</div>
+</div>
+
+<div class="item">
+<img src="image pelayanan.png" style="width:100%;height:500px;">
+<div class="carousel-caption">
+<h2>Pelayanan Masyarakat</h2>
+</div>
+</div>
+
+<div class="item">
+<img src="images pembangunan desa.jpeg" style="width:100%;height:500px;">
+<div class="carousel-caption">
+<h2>Pembangunan kelurahan Tanjung selamat</h2>
+</div>
+</div>
+
+</div>
+
+<a class="left carousel-control" href="#sliderDesa" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+
+<a class="right carousel-control" href="#sliderDesa" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+<a class="navbar-brand" href="#">
+Kelurahan Tanjung Selamat
+</a>
+</div>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="nav navbar-nav">
+
+<li class="active">
+<a href="#beranda">Beranda</a>
+</li>
+
+<li>
+<a href="#profil">Profil kelurahan Tanjung Selamat</a>
+</li>
+
+<li>
+<a href="#fasilitas">Fasilitas</a>
+</li>
+
+<li>
+<a href="#lokasi">Lokasi</a>
+</li>
+
+<li>
+<a href="#galeri">Galeri</a>
+</li>
+
+<li class="dropdown">
+
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+Informasi Kelurahan Tanjung Selamat <span class="caret"></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="#penduduk">Data Penduduk</a></li>
+<li><a href="#berita">Berita Kelurahan Tanjung Selamat</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+
+</li>
+
+</ul>
+
+<form class="navbar-form navbar-left">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Isikan keyword">
+</div>
+
+<button type="submit" class="btn btn-default">
+Cari
+</button>
+</form>
+
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<span class="glyphicon glyphicon-user"></span>
+ User
+<span class="caret"></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="#">Profil</a></li>
+<li><a href="#">Login Admin</a></li>
+<li><a href="#">Logout</a></li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- BERANDA -->
+<section id="beranda">
+
+<div class="jumbotron text-center">
+
+<h1>Website Resmi Kelurahan Tanjung Selamat</h1>
+
+<p>
+Kecamatan Tuntungan - Kota Medan
+</p>
+
+<a href="#profil" class="btn btn-primary btn-lg">
+Lihat Profil Kelurahan Tanjung Selamat
+</a>
+
+</div>
+
+</section>
+
+<!-- SAMBUTAN -->
+<section class="section">
+
+<div class="container">
+
+<h2 class="text-center">
+Sambutan Kepala Kelurahan Tanjung Selamat
+</h2>
+
+<hr>
+
+<p align="justify">
+
+<p align="justify">
+
+Selamat datang di Website Resmi Kelurahan Tanjung Selamat.
+
+Website ini hadir sebagai media informasi dan komunikasi antara Pemerintah Kelurahan Tanjung Selamat dengan masyarakat. Melalui website ini, kami berupaya memberikan informasi mengenai profil Kelurahan Tanjung Selamat, fasilitas umum, kegiatan masyarakat, program pembangunan, serta berbagai layanan yang tersedia bagi warga.
+
+Kami berharap website ini dapat menjadi sarana yang bermanfaat untuk meningkatkan keterbukaan informasi dan mempermudah masyarakat dalam memperoleh informasi yang dibutuhkan. Terima kasih atas dukungan dan partisipasi seluruh masyarakat dalam membangun Kelurahan Tanjung Selamat yang lebih maju, aman, dan sejahtera.
+
+<br><br>
+
+<b>Kepala Kelurahan Tanjung Selamat</b>
+
+</p>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- PROFIL -->
+<section id="profil" class="section bg-info">
+
+<div class="container">
+
+<h2 class="text-center">
+Profil dan Sejarah Kelurahan Tanjung Selamat
+</h2>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="row">
+
+<div class="col-md-12">
+
+<h3>Sejarah Kelurahan Tanjung Selamat</h3>
+
+<p align="justify">
+Kelurahan Tanjung Selamat merupakan salah satu kelurahan yang berada di Kecamatan Medan Tuntungan, Kota Medan, Provinsi Sumatera Utara. Sebelum berada di bawah naungan Pemerintah Kota Medan, wilayah ini merupakan Desa Tanjung Selamat yang termasuk dalam Kabupaten Deli Serdang.
+</p>
+
+<p align="justify">
+Pada sekitar tahun 1970-an, wilayah ini masih berupa perkampungan kecil yang terletak di kawasan pinggiran Sungai Belawan. Seiring bertambahnya jumlah penduduk dan perkembangan wilayah, daerah ini berkembang menjadi Kampung Tanjung Selamat yang saat itu masih berada dalam administrasi Kabupaten Deli Serdang.
+</p>
+
+<p align="justify">
+Pada tahun 1980, Desa Tanjung Selamat berubah status menjadi Kelurahan Tanjung Selamat. Wilayah ini kemudian mengalami perkembangan yang cukup pesat, terutama pada sektor permukiman dan pembangunan infrastruktur. Beberapa kawasan perumahan seperti Perumahan IKIP dan Perumahan POLRI mulai berkembang dan dihuni masyarakat.
+</p>
+
+<p align="justify">
+Melihat perkembangan yang semakin pesat, wilayah Tanjung Selamat yang berada di sebelah utara akhirnya masuk ke dalam wilayah administrasi Pemerintah Kota Medan dan menjadi Kelurahan Tanjung Selamat yang berada di Kecamatan Medan Tuntungan hingga saat ini.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FASILITAS -->
+<section id="fasilitas" class="section">
+
+<div class="container">
+
+<h2 class="text-center">
+Fasilitas Kelurahan Tanjung Selamat
+</h2>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-3">
+<div class="panel panel-primary">
+<div class="panel-heading">Sekolah</div>
+<div class="panel-body">
+SD, SMP dan fasilitas pendidikan lainnya.
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-success">
+<div class="panel-heading">Puskesmas</div>
+<div class="panel-body">
+Pelayanan kesehatan masyarakat.
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-warning">
+<div class="panel-heading">Masjid</div>
+<div class="panel-body">
+Tempat ibadah masyarakat.
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-danger">
+<div class="panel-heading">Kantor Lurah</div>
+<div class="panel-body">
+Pusat kegiatan pemerintahan Kelurahan Tanjung
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DATA PENDUDUK -->
+<section id="penduduk" class="section bg-info">
+
+<div class="container">
+
+<h2 class="text-center">
+Data Penduduk
+</h2>
+
+<hr>
+
+<table class="table table-bordered table-striped">
+
+<tr>
+<th>No</th>
+<th>Keterangan</th>
+<th>Jumlah</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Laki-Laki</td>
+<td>8.316</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Perempuan</td>
+<td>9.985</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Total Penduduk</td>
+<td>18.301</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- GALERI -->
+<section id="galeri" class="section">
+
+<div class="container">
+
+<h2 class="text-center">
+Galeri Kelurahan Tanjung Selamat
+</h2>
+
+<hr>
+
+<div class="row galeri">
+
+<div class="col-md-4">
+<img src="images posyandu.jpeg" class="img-thumbnail">
+</div>
+
+<div class="col-md-4">
+<img src="image pembangunan Gang.jpeg" class="img-thumbnail">
+</div>
+
+<div class="col-md-4">
+<img src="image gotong royong.jpeg" class="img-thumbnail">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BERITA -->
+<section id="berita" class="section bg-info">
+
+<div class="container">
+
+<h2 class="text-center">
+Berita Kelurahan Tanjung Selamat
+</h2>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="thumbnail">
+<div class="caption">
+<h3>Posyandu dan Pemeriksaan Kesehatan Balita</h3>
+<p>
+Kelurahan Tanjung Selamat bersama tenaga kesehatan melaksanakan kegiatan Posyandu untuk memantau pertumbuhan balita, memberikan imunisasi, serta penyuluhan kesehatan bagi ibu dan anak. Kegiatan ini dilakukan secara rutin guna meningkatkan kesehatan masyarakat.</p>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="thumbnail">
+<div class="caption">
+<h3>Pembangunan Jalan Lingkungan</h3>
+<p>
+Pemerintah Kelurahan Tanjung Selamat melaksanakan pembangunan dan perbaikan jalan lingkungan untuk meningkatkan kenyamanan dan keselamatan masyarakat dalam beraktivitas sehari-hari.
+</p>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="thumbnail">
+<div class="caption">
+<h3>Gotong Royong Membersihkan Lingkungan</h3>
+<p>
+Warga Kelurahan Tanjung Selamat melaksanakan kegiatan gotong royong membersihkan lingkungan dan saluran drainase guna menjaga kebersihan serta mencegah banjir.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LOKASI -->
+<section id="lokasi" class="section">
+
+<div class="container">
+
+<h2 class="text-center">
+Lokasi Kelurahan
+</h2>
+
+<hr>
+
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.1926436504336!2d98.6017762747455!3d3.54298619643127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312f62a1cff825%3A0xbf8c34bba1aa4adf!2sKantor%20Lurah%20Tanjung%20Selamat!5e0!3m2!1sid!2sid!4v1782323520880!5m2!1sid!2sid"
+width="100%"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="section bg-info">
+
+<div class="container">
+
+<h2 class="text-center">
+Hubungi Kami
+</h2>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<form>
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" class="form-control">
+</div>
+
+<div class="form-group">
+<label>Pesan</label>
+<textarea class="form-control" rows="5"></textarea>
+</div>
+
+<button class="btn btn-primary">
+Kirim
+</button>
+
+</form>
+
+</div>
+
+<div class="col-md-6">
+
+<h4>Alamat</h4>
+
+<p>
+Kelurahan Tanjung Selamat<br>
+Kecamatan Sunggal<br>
+Kabupaten Deli Serdang
+</p>
+
+<p>
+Email : desatanjungselamat@gmail.com
+</p>
+
+<p>
+Telp : 0822-6838-7479
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+
+<p>
+© 2026 Website Resmi Kelurahan Tanjung Selamat
+</p>
+
+</div>
+
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
